@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: rgb(82, 215, 255);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.nav-title{
+    text-align: center;
+    padding: 20px 0;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    background-color: rgb(0, 82, 129);
+    color: #fff;
+}
+
+.nav-link{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+.nav-search form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-search form input, button{
+    margin: 0 5px;
+}
+
+.nav-search form input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.nav-search form input::after{
+    background-color: transparent;
+}
+
+.nav-search form input::-webkit-input-placeholder{
+    opacity: 1;
+    color: #000;
+}
+
+.nav-search form button{
+    background-color: rgba(0, 0, 0, .5);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+}
+
+.nav-link a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.article .container{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+.article .card{
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    height: 75px;
+    margin: 20px 0;
+    overflow-y: visible;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 1px 1px 5px #00000086;
+}
+
+.article .card:hover{
+    box-shadow: 2px 2px 10px #00000086;
+}
+
+.article .card a{
+    color: #000;
+    font-style: none;
+    text-decoration: none;
+}
+
+.article .card h2{
+    margin-left: 20px;
+}
+
+.article .card p{
+    margin-left: 20px;
+}
+
+.comment{
+    padding: 20px 10%;
+    background-color: #616161;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.comment h2{
+    padding: 10px 0;
+}
+
+.comment form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.comment form p, input, textarea{
+    margin: 5px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.comment form p input{
+    border-bottom: 1px solid #fff;
+    min-width: 50%;
+}
+
+.comment form textarea{
+    border: 1px solid #fff;
+    padding: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+}
+
+.comment form button{
+    width: 50%;
+    margin: 20px 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #313131;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+    bottom: 0;
+    background-color: #000638;
+    width: 100%;
+    height: 50px;
+}
+
+footer a{
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+article{
+    padding: 20px 20px;
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+}
+
+article p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+article h1, h2, h3, h4, h5 {
+    padding-top: 10px;
+}
+
+article ul, ol{
+    margin-left: 20px;
+}
+
+.tampil-comments{
+    padding: 20px 30px;
+}
+
+.tampil-comments h2{
+    text-align: center;
+}
+
+.tampil-comments .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tampil-comments .card{
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #dadada;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    flex-wrap: wrap;
+}
+
+.tampil-comments .card p{
+    margin: 5px 0;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.tampil-comments .card p:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+.tampil-comments .card p:nth-child(1) span:nth-child(1){
+    font-weight: bold;
+}
+
+.tampil-comments .card p:nth-child(1) span:nth-child(2){
+    font-style: italic;
+    color: #666666;
+}
+
+.tampil-comments .card p.time{
+    text-align: right;
+}
+
+.search{
+    padding: 20px 30px;
+}
+
+.login-page{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-page::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.25);
+}
+
+.login-page .container{
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .5);
+    width: 75%;
+    margin: auto;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    padding: 30px 20px;
+}
+
+.login-page .container h1{
+    text-align: center;
+}
+
+.login-page .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20%;
+}
+
+.login-page .container form p{
+    margin-top: 20px;
+}
+
+.login-page .container form input{
+    border: 1px solid rgba(255, 255, 255, .75);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.login-page .container form input::-webkit-input-placeholder{
+    opacity: .8;
+    color: #ffffff;
+}
+
+.login-page .container form button{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    transition: .5s;
+    transform: scale(1);
+}
+
+.login-page .container form button:hover{
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.login-page .container form .viewpass {
+    margin: 10px 0;
+}
+
+.login-page .container form .viewpass input{
+    width: 15px;
+    height: 15px;
+}
+
+.login-page .container form .viewpass span{
+    line-height: 10px;
+}
